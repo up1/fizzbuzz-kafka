@@ -19,3 +19,24 @@ $bin/kafka-console-producer.sh --broker-list localhost:9092 --topic demo03
 Read message from Topic = demo03
 $bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic demo03 --from-beginning
 ```
+
+## Running producer
+```
+$go run cmd/producer.go
+```
+
+## Running consumer
+```
+$go run cmd/consumer.go
+```
+
+## FizzBuzz with Kafka
+
+Structure
+```
+producer -> 5 -> Topic :: question <- consumer (5) -> Buzz -> Topic :: answer <- Consumer (Buzz)
+```
+
+List of topics
+* question
+* answer
