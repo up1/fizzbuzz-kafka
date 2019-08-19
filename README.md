@@ -40,3 +40,7 @@ producer -> 5 -> Topic :: question <- consumer (5) -> Buzz -> Topic :: answer <-
 List of topics
 * question
 * answer
+
+
+## Client Kafka library
+* [Sarama](https://github.com/Shopify/sarama)
